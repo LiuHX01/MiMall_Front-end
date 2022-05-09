@@ -43,7 +43,6 @@ body {
     width: 120px;
 }
 
-/*整个块都是超链接*/
 .site-topbar .shoppingCart a {
     height: 40px;
     width: 120px;
@@ -55,7 +54,6 @@ body {
     color: #ff6700;
 }
 
-/*顶部栏链接*/
 .site-topbar a {
     color: #b0b0b0;
     font-size: 12px;
@@ -63,20 +61,17 @@ body {
     line-height: 40px;
 }
 
-/*悬浮变色*/
 .site-topbar a:hover {
     /*text-decoration: none;*/
     color: #fff;
 }
 
-/*竖线*/
 .site-topbar span {
     color: #424242;
     margin: 0 0.3em;
 }
 
-/*顶部黑框end*/
-
+/*----------------------------------------------*/
 /*顶部导航*/
 .site-header {
     width: 100%;
@@ -92,10 +87,11 @@ body {
     margin-right: auto;
 }
 
-.site-header .header-logo {
-    width: 62px;
+.site-header .header-logo img {
+    width: 56px;
     height: 56px;
     margin-top: 22px;
+    margin-right: 6px;
     overflow: hidden;
     float: left;
 }
@@ -136,7 +132,7 @@ body {
     position: absolute;
     width: 234px;
     height: 460px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     top: 100px;
     left: -62px;
     z-index: 300;
@@ -215,8 +211,8 @@ body {
     padding: 1px 6px;
     outline: 0;
 }
-/*顶部导航end*/
 
+/*----------------------------------------------*/
 /*主体*/
 .home-hero-container {
     width: 1226px;
@@ -241,7 +237,7 @@ body {
     height: 170px;
     float: left;
     display: block;
-    margin-top: 14px;
+    margin-top: 9px;
 }
 
 .home-hero-container .site-slider-sub .span4 ul {
@@ -309,7 +305,8 @@ body {
 }
 
 
-/*-------------------------------------------------------------------------*/
+/*----------------------------------------------*/
+/*商品主页*/
 .page-main {
     width: 100%;
     height: 2760px;
@@ -513,7 +510,8 @@ body {
     color: #ff6700;
 }
 
-
+/*----------------------------------------------*/
+/*视频部分*/
 .video-list {
     width: 1240px;
     height: 285px;
@@ -563,6 +561,11 @@ body {
     overflow: hidden;
 }
 
+.video-item .play:hover {
+    background: #ff6700;
+    border: 2px solid #ff6700;
+}
+
 .video-item .play i {
     font-size: 16px;
     line-height: 20px;
@@ -589,9 +592,12 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-/*----------------------------------*/
+
+/*----------------------------------------------*/
+/*尾部*/
 .site-footer .container {
     width: 1226px;
+    height: 333px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -636,6 +642,10 @@ body {
     vertical-align: -4px;
 }
 
+.site-footer .list-service a:hover {
+    color: #ff6700;
+}
+
 .site-footer .footer-links {
     padding: 40px 0;
     display: block;
@@ -663,6 +673,10 @@ body {
 
 .site-footer .footer-links .col-links a {
     color: #757575;
+}
+
+.site-footer .footer-links .col-links a:hover {
+    color: #ff6700;
 }
 
 .site-footer .footer-links .col-content {
@@ -697,6 +711,11 @@ body {
     display: inline-block;
 }
 
+.site-footer .footer-links .col-content .btn-line i {
+    width: 14px;
+    height: 14px;
+}
+
 .site-footer .footer-links .col-content .btn-line:hover {
     color: #fff;
     background-color: #ff6700;
@@ -711,8 +730,96 @@ body {
 .site-footer .footer-links .col-content .follow i {
     width: 24px;
     height: 24px;
+    font-size: 19px;
     display: inline-block;
     vertical-align: middle;
     margin-left: 6px;
     margin-top: -3px;
+    color: #757575;
+}
+
+.site-footer .footer-links .col-content .follow i:hover {
+    color: #ff6700;
+}
+    /*-------------------------------------------------------------------------------------------*/
+
+.site-info {
+    padding: 30px 0;
+    font-size: 12px;
+    background-color: #fafafa;
+    width: 100%;
+    height: 205px;
+    display: block;
+}
+
+.site-info .container {
+    position: relative;
+    width: 1226px;
+    height: 157px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.site-info .logo {
+    width: 56px;
+    height: 56px;
+    margin-right: 20px;
+    background: url("../images/56-icon-小米归属.png");
+    background-size: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.site-info .info-text {
+    color: #b0b0b0;
+    padding-left: 77px;
+    display: block;
+}
+
+.site-info .info-text p {
+    margin: 0;
+    line-height: 18px;
+    display: block;
+}
+
+.site-info .info-text .sites a {
+    color: #757575;
+}
+
+.site-info .info-text .sites a:hover {
+    color: #ff6700;
+}
+
+.site-info .info-text a {
+    color: #b0b0b0;
+}
+
+.site-info .info-text a:hover {
+    color: #ff6700;
+}
+
+.site-info .info-links {
+    height: 28px;
+    margin: 4px 0 15px;
+    padding-left: 77px;
+}
+
+.site-info .info-links a {
+    display: inline-block;
+}
+
+.site-info .info-links img {
+    width: 83px;
+    height: 28px;
+    margin-left: 0;
+}
+
+.site-info .slogan {
+    margin: 30px auto 0;
+    width: auto;
+    height: 19px;
+    background: url("../images/slogan2020.png") no-repeat center 0;
 }
